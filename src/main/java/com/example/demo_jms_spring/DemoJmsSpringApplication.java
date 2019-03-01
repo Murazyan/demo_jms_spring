@@ -16,7 +16,6 @@ public class DemoJmsSpringApplication {
                 "C:\\Users\\muraz\\Desktop\\demo_jms_spring\\src\\main\\resources\\WEB-INF\\jmsContext.xml");
         SimpleMessageSender messageSender = (SimpleMessageSender) jmsContext
                 .getBean("simpleMessageSender");
-
         // Create a session within the connection.
         messageSender.sendMessage("helloooooooooooo");
     }
